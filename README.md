@@ -4,6 +4,7 @@
 
 > from the command line of your public server execute the following commands to get the follow softwares:
 * sudo yum install git -y
+* sudo yum install python3 -y
 * sudo amazon-linux-extras install docker -y 
 * sudo yum install docker
 * sudo su -
