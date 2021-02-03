@@ -36,4 +36,8 @@
 
 <img src = "imgs/node-stage1-gitcheckout.png">
 
+> the next step is to add the testing stage like so:
+
+<img src = "imgs/node-stage2.png">
+
 
