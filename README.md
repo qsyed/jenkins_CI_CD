@@ -33,6 +33,6 @@
 
 > use the the pipeline syntax generator to help get the correct syntax 
 
-<img src = "imgs/node-stage1-gitcheckout>
+<img src = "imgs/node-stage1-gitcheckout.png">
 
 
