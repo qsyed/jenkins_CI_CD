@@ -1,9 +1,23 @@
 # Setting up a Functional CI / CD pipeline 
 
-> The first thing you need is a jenkins sever running in a public subnet. If you dont have that please refer to my github repo titled "jenkins-ec2"
+> The first thing you need is a jenkins sever running in a public subnet. If you dont have that please refer to my github repo titled "jenkins-ec2" 
+
+> from the command line of your public server execute the following commands to get the follow softwares:
+* sudo yum install git -y
+* sudo amazon-linux-extras install docker -y 
+* sudo yum install docker
+* sudo su -
+* sudo service docker start
+* sudo usermod -a -G docker ec2-user
+* sudo su - ec2-user
+* docker --version to confirm docker was installed
+* git --version to confirm git was installed
 
 
 > The second thing you need is a second server in a private subnet. this will rpresent different stages such as dev, pre-production, and production. 
+
+
+
 
 
 > Your jenkins server create your pipeline. 
