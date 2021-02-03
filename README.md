@@ -8,7 +8,7 @@
 
 > Your jenkins server create your pipeline. 
 
-<img src = "images/create-pipeline.png">
+<img src = "imgs/create-pipeline.png">
 
 
 
