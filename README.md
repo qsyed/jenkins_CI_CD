@@ -20,10 +20,19 @@
 
 
 
-> Your jenkins server create your pipeline. 
+> From your jenkins server create your pipeline. 
 
 <img src = "imgs/create-pipeline.png">
 
 
+>from ther we will start to defining our pipeline stages 
+
+* first stage git checkout:
+
+<img src = "imgs/stage-1.png">
+
+> use the the pipeline syntax generator to help get the correct syntax 
+
+<img src = "imgs/node-stage1-gitcheckout>
 
 
