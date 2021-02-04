@@ -49,8 +49,11 @@
 
 <img src = "imgs/docker-build.png">
 
+> After succesfully building the image we then need to push it to DockerHub so that we can have proper version control. To do this in a secure manner we will bind ourdocker-hub password to a variable. 
 
+<img src = "imgs/bind.png">
 
+<img src = "imgs/docker-bind.png">
 references: 
 
 https://serverfault.com/questions/883873/how-give-aws-credential-to-jenkins-pipeline
