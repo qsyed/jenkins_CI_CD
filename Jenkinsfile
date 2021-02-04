@@ -20,7 +20,8 @@ node {
     stage("deploy to ec2"){
     def docker_rm = 'docker rm -f devbops_user'
     def docker_rmi = 'docker rmi -f $(docker images -a -q)'
-    def docker_run = 'docker run -p 8080:80 -d --name devbops_user qsyed/user_pipline:${env.BUILD_NUMBER}'
+
+    def docker_run = docker.run("qsyed/user_pipeline:${env.BUILD_NUMBER}")
     
 
        sshagent(credentials: ['Abdul-private']) {
