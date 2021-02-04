@@ -7,7 +7,7 @@ node {
     }
     
 
-    stage("push"){
+    stage("push to docker"){
 
     
     docker.withRegistry('https://registry.hub.docker.com', 'dockerhub_ID') {
@@ -16,6 +16,7 @@ node {
 
         /* Push the container to the custom Registry */
         customImage.push()
+        customImage.push('latest')
         
     }
 
