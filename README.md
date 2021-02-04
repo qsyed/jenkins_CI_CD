@@ -52,7 +52,10 @@
 <br>
 <img src = "imgs/pipe-line-config2.png">
 
+<br>
 
+> Our jenkins file define the stages that will take place. All we have to do now is run the pipeline. 
+<img src = "imgs/success.png">
 
 
 
