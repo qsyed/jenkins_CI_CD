@@ -25,7 +25,20 @@
 <img src = "imgs/env.png">
 
 
+> install the following plugins on your jenkinks server:
+* Docker Commons Plugin
+* Docker Pipeline
+* Docker plugin
+* docker-build-step
+* CloudBees Docker Build and Publish plugin
+* SSH Agent
+
+
 > First we create the pipeline
+
+
+
+
 
 
 
