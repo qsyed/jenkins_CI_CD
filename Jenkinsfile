@@ -25,23 +25,23 @@ node {
     
 
 
-    stage("deploy to ec2"){
-    def docker_rm = 'docker rm -f devbops_user'
-    def docker_rmi = 'docker rmi -f $(docker images -a -q)'
-    def version = "${env.BUILD_NUMBER}"
+    // stage("deploy to ec2"){
+    // def docker_rm = 'docker rm -f devbops_user'
+    // def docker_rmi = 'docker rmi -f $(docker images -a -q)'
+    // def version = "${env.BUILD_NUMBER}"
 
-    // def docker_run = docker.run("qsyed/user_pipeline:${version}")
+    // // def docker_run = docker.run("qsyed/user_pipeline:${version}")
     
 
-       sshagent(credentials: ['Abdul-private']) {
-           sh "ssh -o StrictHostKeyChecking=no ec2-user@172.25.11.252 ${docker_rm}"
-           sh "ssh -o StrictHostKeyChecking=no ec2-user@172.25.11.252 ${docker_rmi}"
-        //    sh "ssh -o StrictHostKeyChecking=no ec2-user@172.25.11.252 ${docker_run}"
+    //    sshagent(credentials: ['Abdul-private']) {
+    //        sh "ssh -o StrictHostKeyChecking=no ec2-user@172.25.11.252 ${docker_rm}"
+    //        sh "ssh -o StrictHostKeyChecking=no ec2-user@172.25.11.252 ${docker_rmi}"
+    //     //    sh "ssh -o StrictHostKeyChecking=no ec2-user@172.25.11.252 ${docker_run}"
     
 
-    }
+    // }
 
-    }
+    // }
 }
 
 
