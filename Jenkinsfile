@@ -35,7 +35,7 @@ node {
 
        sshagent(credentials: ['Abdul-private']) {
            sh "ssh -o StrictHostKeyChecking=no ec2-user@172.25.11.252 ${docker_rm}"
-           sh "ssh -o StrictHostKeyChecking=no ec2-user@172.25.11.252 ${docker_rmi}"
+        //    sh "ssh -o StrictHostKeyChecking=no ec2-user@172.25.11.252 ${docker_rmi}"
            sh "ssh -o StrictHostKeyChecking=no ec2-user@172.25.11.252 ${docker_run}"
     
 
