@@ -1,6 +1,6 @@
 # Setting up a Functional CI / CD pipeline 
 
-> The first thing you need is a jenkins sever running in a public subnet. If you dont have that please refer to my github repo titled "jenkins-ec2". from the command line of your public server execute the following commands to get the follow softwares and set the rght permissons: * ALL This Can Be Provided As UserData when starting up your ec2 instances *
+> The first thing you need is a jenkins sever running in a public subnet. If you dont have that please refer to my github repo titled "jenkins-ec2". from the command line of your public server execute the following commands to get the follow softwares and set the rght permissons: * ALL this can be provided as UserData when starting up your ec2 instances *
 
 * sudo yum install git -y
 * sudo yum install python3 -y
@@ -9,17 +9,13 @@
 * sudo service docker start
 * sudo sytemctl enable dokcer
 * sudo usermod -a -G docker jenkins
-* docker --version 
-* git --version 
 
-
-> The second thing you need is a second server in a private subnet. this will rpresent different stages such as dev, pre-production, and production. 
+> The second thing you need is a second server in a private subnet. this will rpresent different stages such as dev, pre-production, and production. again install the softwares and set up the right persmissons as show above. 
 
 
 
 
-
-> install the following plugins on your jenkinks server:
+> From install the following plugins on your jenkinks server:
 * Docker Commons Plugin
 * Docker Pipeline
 * Docker plugin
