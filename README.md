@@ -46,7 +46,7 @@
 > 6. The next step is to create our pipeline. in our pipeline definition 
 
 <img src = "imgs/pipe-line-config.png">
-<img src = "imgs/pipe-line-config@.png">
+<img src = "imgs/pipe-line-config2.png">
 
 
 
