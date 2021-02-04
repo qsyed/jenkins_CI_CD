@@ -10,8 +10,9 @@
 * sudo yum install docker
 * sudo su -
 * sudo service docker start
+* sudo sytemctl enable dokcer
 * sudo su - ec2-user
-* sudo usermod -a -G docker ec2-user jenkins
+* sudo usermod -a -G docker jenkins
 * docker --version to confirm docker was installed
 * git --version to confirm git was installed
 
@@ -49,7 +50,12 @@
 
 <img src = "imgs/docker-build.png">
 
-> After succesfully building the image we then need to push it to DockerHub so that we can have proper version control. To do this in a secure manner we will bind ourdocker-hub password to a variable. 
+> After succesfully building the image we then need to push it to DockerHub so that we can have proper version control. 
+
+
+
+
+> To do this in a secure manner we will bind ourdocker-hub password to a variable. 
 
 <img src = "imgs/bind.png">
 
@@ -58,3 +64,4 @@ references:
 
 https://serverfault.com/questions/883873/how-give-aws-credential-to-jenkins-pipeline
 https://stackoverflow.com/questions/44444099/how-to-solve-docker-permission-error-when-trigger-by-jenkins/44444163
+https://tutorials.releaseworksacademy.com/learn/building-your-first-docker-image-with-jenkins-2-guide-for-developers

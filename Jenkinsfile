@@ -11,6 +11,25 @@ node {
     stage("build docker images"){
         sh "docker build -t qsyed/user-service:${env.BUILD_NUMBER} ."
     }
+
+    stage("logging into dokcer hub") {
+        withCredentials([string(credentialsId: 'docker-pwd', variable: 'dockerpw')]) {
+        sh 'docker login -u qsyed -p ${dockerpw}'
+        }
+            
+    }
+}
+
+
+
+
+
     
+
+   
+        
+    
+ 
+  
     
 }
