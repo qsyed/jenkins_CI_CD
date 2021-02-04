@@ -40,4 +40,13 @@
 
 <img src = "imgs/node-stage2.png">
 
+> in our program we are using the boto3 SDK. we have to add enviromental variables so that our test work. the following is an example of how to set that up (go to Jenkins - Manage Jenkins - Configure System - Global properties - Environment variables)
 
+<img src = "imgs/env.png">
+
+
+
+
+
+references: 
+https://serverfault.com/questions/883873/how-give-aws-credential-to-jenkins-pipeline
