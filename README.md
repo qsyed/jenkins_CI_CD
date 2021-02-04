@@ -33,11 +33,11 @@
 
 <br>
 
-> 5. our Pipeline will build and push dokcer images to a repository. inorder to do this we must provide jenkis creditianls to be able to do this in a  secure manner. We also must allow our jenkins    
+> 5. our Pipeline will build and push dokcer images to a docker hub repository. inorder to do this we must provide jenkis creditianls to be able to do this in a secure manner. We also must allow give our jenkins sever an shh connection to our private ec2.  
 
 <img src = "imgs/dockerhub-privateec2.png">
 <br>
-<img src = "imgs/ssh_access_2.png">
+<img src = "imgs/ssh_access.png">
 <br>
 <img src = "imgs/ssh_access_2.png">
 
