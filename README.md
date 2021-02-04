@@ -60,11 +60,11 @@
 
 
 
+## References
+* https://stackoverflow.com/questions/44444099/how-to-solve-docker-permission-error-when-trigger-by-jenkins/44444163
+* https://serverfault.com/questions/883873/how-give-aws-credential-to-jenkins-pipeline
+* https://dzone.com/articles/building-docker-images-to-docker-hub-using-jenkins   
+* https://www.youtube.com/watch?v=mszE-OCI2V4
+* https://www.youtube.com/watch?v=z32yzy4TrKM
 
 
-
-
-
-https://stackoverflow.com/questions/44444099/how-to-solve-docker-permission-error-when-trigger-by-jenkins/44444163
-https://serverfault.com/questions/883873/how-give-aws-credential-to-jenkins-pipeline
-https://dzone.com/articles/building-docker-images-to-docker-hub-using-jenkins   
