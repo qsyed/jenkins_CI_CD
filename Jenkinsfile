@@ -24,7 +24,7 @@ node {
     def runnerfirstContainer = 'docker run -p 8080:80 -d qsyed/user_pipeline:7'
 
        sshagent(credentials: ['Abdul-private']) {
-           sh "ssh -o StrictHostKeyChecking=no ec2-user@172.25.11.186 ${runnerfirstContainer}"
+           sh "ssh -o StrictHostKeyChecking=no ec2-user@172.25.11.252 ${runnerfirstContainer}"
     
 
     }
