@@ -60,7 +60,7 @@ to do this we first must go to the build trigger section of our pipeline, and se
 <br>
 <img src = "imgs/web-hook.png">
 <br>
-<img src = "img/web-hook2.png">
+<img src = "img/wweb-hook2.png">
 
 
 
