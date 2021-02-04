@@ -60,6 +60,8 @@
 
 
 
+
+
 ## References
 * https://stackoverflow.com/questions/44444099/how-to-solve-docker-permission-error-when-trigger-by-jenkins/44444163
 * https://serverfault.com/questions/883873/how-give-aws-credential-to-jenkins-pipeline
