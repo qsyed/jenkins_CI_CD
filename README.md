@@ -1,6 +1,6 @@
 # Setting up a Functional CI / CD pipeline 
 
-> The first thing you need is a jenkins sever running in a public subnet. If you dont have that please refer to my github repo titled "jenkins-ec2". from the command line of your public server execute the following commands to get the follow softwares and set the rght permissons: * ALL this can be provided as UserData when starting up your ec2 instances *
+> 1. The first thing you need is a jenkins sever running in a public subnet. If you dont have that please refer to my github repo titled "jenkins-ec2". from the command line of your public server execute the following commands to get the follow softwares and set the rght permissons: * ALL this can be provided as UserData when starting up your ec2 instances *
 
 * sudo yum install git -y
 * sudo yum install python3 -y
@@ -10,12 +10,13 @@
 * sudo sytemctl enable dokcer
 * sudo usermod -a -G docker jenkins
 
-> The second thing you need is a second server in a private subnet. this will rpresent different stages such as dev, pre-production, and production. again install the softwares and set up the right persmissons as show above. 
+> 2. The second thing you need is a second server in a private subnet. this will rpresent different stages such as dev, pre-production, and production. again install the softwares and set up the right persmissons as show above. 
 
 
 
 
-> From install the following plugins on your jenkinks server:
+> 3. The next step is to access your jenkins server, using you_public_ip:8080. we theninstall the following plugins in our sever(Manage Jenkins -> Manage Plugins): 
+
 * Docker Commons Plugin
 * Docker Pipeline
 * Docker plugin
@@ -24,7 +25,7 @@
 * SSH Agent
 
 
-> in our program we are using the boto3 SDK. we have to add enviromental variables so that our test work. the following is an example of how to set that up (go to Jenkins - Manage Jenkins - Configure System - Global properties - Environment variables)
+> in our program we are using the boto3 SDK. we have to add enviromental variables so that our test work. the following is an example of how to set that up (go to Jenkins -> Manage Jenkins -> Configure System -> Global properties -> Environment variables)
 
 <img src = "imgs/env.png">
 
