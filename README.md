@@ -11,6 +11,7 @@
 * sudo usermod -a -G docker jenkins
 
 <br>
+
 > 2. The second thing you need is a second server in a private subnet. this will rpresent different stages such as dev, pre-production, and production. again install the softwares and set up the right persmissons as show above. 
 <br>
 
@@ -31,9 +32,10 @@
 
 
 <br>
+
 > 5. our Pipeline will build and push dokcer images to a repository. inorder to do this we must provide jenkis creditianls to be able to do this in a  secure manner. We also must allow our jenkins    
 
-<img src = "imgs/docker-hub-privateec2.png">
+<img src = "imgs/dockerhub-privateec2.png">
 <br>
 <img src = "imgs/ssh_access_2.png">
 <br>
