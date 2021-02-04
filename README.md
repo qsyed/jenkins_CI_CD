@@ -47,7 +47,7 @@
 
 > the next stage is building the docker image 
 
-<img src = "imgs/build-docker.png">
+<img src = "imgs/docker-build.png">
 
 
 
