@@ -2,7 +2,7 @@ node {
 
     checkout scm
 
-    docker.withRegistry('https://registry.hub.docker.com', 'dockerhub_id') {
+    docker.withRegistry('https://registry.hub.docker.com', 'dockerhub_ID') {
 
         def customImage = docker.build("qsyed/user_pipeline")
 
