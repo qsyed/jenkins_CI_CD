@@ -10,8 +10,9 @@
 * sudo sytemctl enable dokcer
 * sudo usermod -a -G docker jenkins
 
+<br>
 > 2. The second thing you need is a second server in a private subnet. this will rpresent different stages such as dev, pre-production, and production. again install the softwares and set up the right persmissons as show above. 
-
+<br>
 
 > 3. The next step is to access your jenkins server, using you_public_ip:8080. we theninstall the following plugins in our sever(Manage Jenkins -> Manage Plugins): 
 
@@ -22,12 +23,14 @@
 * CloudBees Docker Build and Publish plugin
 * SSH Agent
 
+<br>
 
 > 4. My pipeline and Test script is dependent on the boto3 SDK (software development kit) to access AWS resources. I had to enviromental variables, so that when Jenkis runs the our test script if can properly communicate with our AWS resources. The following is an example of how to set that up (go to Jenkins -> Manage Jenkins -> Configure System -> Global properties -> Environment variables)
 
 <img src = "imgs/env.png">
 
 
+<br>
 > 5. our Pipeline will build and push dokcer images to a repository. inorder to do this we must provide jenkis creditianls to be able to do this in a  secure manner. We also must allow our jenkins    
 
 <img src = "imgs/docker-hub-privateec2.png">
