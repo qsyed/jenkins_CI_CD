@@ -2,15 +2,16 @@
 
 > The first thing you need is a jenkins sever running in a public subnet. If you dont have that please refer to my github repo titled "jenkins-ec2" 
 
-> from the command line of your public server execute the following commands to get the follow softwares:
+> from the command line of your public server execute the following commands to get the follow softwares and set the rght permissons:
+
 * sudo yum install git -y
 * sudo yum install python3 -y
 * sudo amazon-linux-extras install docker -y 
 * sudo yum install docker
 * sudo su -
 * sudo service docker start
-* sudo usermod -a -G docker ec2-user
 * sudo su - ec2-user
+* sudo usermod -a -G docker ec2-user jenkins
 * docker --version to confirm docker was installed
 * git --version to confirm git was installed
 
@@ -44,9 +45,13 @@
 
 <img src = "imgs/env.png">
 
+> the next stage is building the docker image 
 
+<img src = "imgs/build-docker.png">
 
 
 
 references: 
+
 https://serverfault.com/questions/883873/how-give-aws-credential-to-jenkins-pipeline
+https://stackoverflow.com/questions/44444099/how-to-solve-docker-permission-error-when-trigger-by-jenkins/44444163
