@@ -54,6 +54,18 @@
 
 <br>
 
+> 7. we can also setup a webhook so that jenkins will pull and build the enviroment everytime that there is a push to a branch.
+to do this we first must go to the build trigger section of our pipeline, and select the option "GitHub hook trigger for GITScm polling". Next we need to add the web hook to our github repo. To do this go to the settings of your repo and go to the webhook section and add a web hook. the url should be like the follow "your_public_ip:8080/github-webhook".
+ 
+<br>
+<img src = "imgs?web-hook.png">
+<br>
+<img src = "img/web-hook2.png">
+
+
+
+
+
 > Our jenkins file define the stages that will take place. All we have to do now is run the pipeline. 
 <img src = "imgs/success.png">
 
@@ -63,7 +75,8 @@
 ## References
 * https://stackoverflow.com/questions/44444099/how-to-solve-docker-permission-error-when-trigger-by-jenkins/44444163
 * https://serverfault.com/questions/883873/how-give-aws-credential-to-jenkins-pipeline
-* https://dzone.com/articles/building-docker-images-to-docker-hub-using-jenkins   
+* https://dzone.com/articles/building-docker-images-to-docker-hub-using-jenkins 
+* https://www.blazemeter.com/blog/how-to-integrate-your-github-repository-to-your-jenkins-project  
 * https://www.youtube.com/watch?v=mszE-OCI2V4
 * https://www.youtube.com/watch?v=z32yzy4TrKM
 
