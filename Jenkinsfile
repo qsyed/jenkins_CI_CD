@@ -40,7 +40,7 @@ node {
 
 
     stage("delete all local docker images"){
-        sh 'docker rmi -f $(docker images -a -q'
+        sh 'docker rmi -f $(docker images -a -q)'
 
     }
 }
