@@ -1,8 +1,6 @@
 # Setting up a Functional CI / CD pipeline 
 
-> The first thing you need is a jenkins sever running in a public subnet. If you dont have that please refer to my github repo titled "jenkins-ec2" 
-
-> from the command line of your public server execute the following commands to get the follow softwares and set the rght permissons: * ALL This Can Be Provided As UserData when starting up your ec2 instances*
+> The first thing you need is a jenkins sever running in a public subnet. If you dont have that please refer to my github repo titled "jenkins-ec2". from the command line of your public server execute the following commands to get the follow softwares and set the rght permissons: * ALL This Can Be Provided As UserData when starting up your ec2 instances *
 
 * sudo yum install git -y
 * sudo yum install python3 -y
