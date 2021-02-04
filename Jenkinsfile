@@ -1,5 +1,8 @@
 node {
 
+    stage("build"){
+        sh 'python3 Test.py'
+    }
     checkout scm
 
     docker.withRegistry('https://registry.hub.docker.com', 'dockerhub_ID') {
