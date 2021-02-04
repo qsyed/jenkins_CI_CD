@@ -58,7 +58,7 @@
 to do this we first must go to the build trigger section of our pipeline, and select the option "GitHub hook trigger for GITScm polling". Next we need to add the web hook to our github repo. To do this go to the settings of your repo and go to the webhook section and add a web hook. the url should be like the follow "your_public_ip:8080/github-webhook".
  
 <br>
-<img src = "imgs?web-hook.png">
+<img src = "imgs/web-hook.png">
 <br>
 <img src = "img/web-hook2.png">
 
