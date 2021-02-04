@@ -20,48 +20,19 @@
 > The second thing you need is a second server in a private subnet. this will rpresent different stages such as dev, pre-production, and production. 
 
 
-
-
-
-> From your jenkins server create your pipeline. 
-
-<img src = "imgs/create-pipeline.png">
-
-
->from ther we will start to defining our pipeline stages 
-
-* first stage git checkout:
-
-<img src = "imgs/stage-1.png">
-
-> use the the pipeline syntax generator to help get the correct syntax 
-
-<img src = "imgs/node-stage1-gitcheckout.png">
-
-> the next step is to add the testing stage like so:
-
-<img src = "imgs/node-stage2.png">
-
 > in our program we are using the boto3 SDK. we have to add enviromental variables so that our test work. the following is an example of how to set that up (go to Jenkins - Manage Jenkins - Configure System - Global properties - Environment variables)
 
 <img src = "imgs/env.png">
 
-> the next stage is building the docker image 
-
-<img src = "imgs/docker-build.png">
-
-> After succesfully building the image we then need to push it to DockerHub so that we can have proper version control. 
 
 
 
 
-> To do this in a secure manner we will bind ourdocker-hub password to a variable. 
 
-<img src = "imgs/bind.png">
 
-<img src = "imgs/docker-bind.png">
-references: 
 
-https://serverfault.com/questions/883873/how-give-aws-credential-to-jenkins-pipeline
+
+
 https://stackoverflow.com/questions/44444099/how-to-solve-docker-permission-error-when-trigger-by-jenkins/44444163
-https://tutorials.releaseworksacademy.com/learn/building-your-first-docker-image-with-jenkins-2-guide-for-developers
+https://serverfault.com/questions/883873/how-give-aws-credential-to-jenkins-pipeline
+https://dzone.com/articles/building-docker-images-to-docker-hub-using-jenkins   
