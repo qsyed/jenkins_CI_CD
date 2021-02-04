@@ -33,7 +33,7 @@
 
 <br>
 
-> 5. our Pipeline will build and push dokcer images to a docker hub repository. inorder to do this we must provide jenkis creditianls to be able to do this in a secure manner. We also must allow give our jenkins sever an shh connection to our private ec2.  
+> 5. our Pipeline will build and push dokcer images to a docker hub repository. inorder to do this we must provide jenkis creditianls to be able to do this in a secure manner. We also must allow give our jenkins sever an shh connection to our private ec2. 
 
 <img src = "imgs/dockerhub-privateec2.png">
 <br>
@@ -41,11 +41,12 @@
 <br>
 <img src = "imgs/ssh_access_2.png">
 
+<br>
 
+> 6. The next step is to create our pipeline. in our pipeline definition 
 
-
-
-> First we create the pipeline
+<img src = "imgs/pipe-line-config.png">
+<img src = "imgs/pipe-line-config@.png">
 
 
 
