@@ -1,35 +1,12 @@
 node {
-    stage('Git Checkout'){
-        git branch: 'dev', credentialsId: 'git-creds', url: 'https://github.com/qsyed/jenkins_CI_CD.git'
+
+    checkout scm
+
+    docker.withRegistry('https://registry.hub.docker.com', 'dockerhub_id') {
+
+        def customImage = docker.build("qsyed/user_pipeline")
+
+        /* Push the container to the custom Registry */
+        customImage.push()
     }
-    
-    stage("testing"){
-        sh "pip3 install -r requirements.txt"
-        sh "python3 Test.py"
-    }
-    
-    stage("build docker images"){
-        sh "docker build -t qsyed/user-service:${env.BUILD_NUMBER} ."
-    }
-
-    stage("logging into dokcer hub") {
-        withCredentials([string(credentialsId: 'docker-pwd', variable: 'dockerpw')]) {
-        sh 'docker login -u qsyed -p ${dockerpw}'
-        }
-            
-    }
-}
-
-
-
-
-
-    
-
-   
-        
-    
- 
-  
-    
 }

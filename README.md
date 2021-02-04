@@ -25,7 +25,7 @@
 <img src = "imgs/env.png">
 
 
-
+> First we create the pipeline
 
 
 
