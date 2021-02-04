@@ -28,6 +28,9 @@
 <img src = "imgs/env.png">
 
 
+> 5. our Pipeline will build and push dokcer images to a repository. inorder to do this we must provide jenkis creditianls to be able to do this in a  secure manner. We also must allow our jenkins 
+
+<img src = "imgs/doecker-hub-privateec2.png>
 
 
 
