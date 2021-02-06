@@ -12,7 +12,7 @@
 
 <br>
 
-> 2. The second thing you need is a second server in a private subnet. this will rpresent different stages such as dev, pre-production, and production. again install the softwares and set up the right persmissons as show above. 
+> 2. The second thing you need is a second server in a private subnet. this will rpresent different stages such as dev, pre-production, and production.  
 <br>
 
 > 3. The next step is to access your jenkins server, using you_public_ip:8080. we theninstall the following plugins in our sever(Manage Jenkins -> Manage Plugins): 
