@@ -1,14 +1,18 @@
 node {
 
-    checkout scm
 
-    stage("build"){
+    stage("Git Checkout"){
+        checkout scm
+
+    }
+
+    stage("Testing"){
         sh 'pip3 install -r requirements.txt'
         sh 'python3 Test.py'
     }
     
 
-    stage("push to docker"){
+    stage("Build - Push to Docker"){
 
     
     docker.withRegistry('https://registry.hub.docker.com', 'dockerhub_ID') {
@@ -25,7 +29,7 @@ node {
 
 
 
-    stage("deploy to ec2"){
+    stage("Deploy to ec2"){
     def docker_rm = 'docker rm -f devbops_user'
     def docker_run = 'docker run -p 8080:80 -d --name devbops_user qsyed/user_pipeline'
     
@@ -40,7 +44,7 @@ node {
     }
 
 
-    stage("delete all local docker images"){
+    stage("Delete all local docker"){
         sh 'docker rmi -f $(docker images -a -q)'
 
     }
