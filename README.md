@@ -75,7 +75,7 @@
 
 <br>
 
-> 7. Next we will create a webhook o that jenkins will pull and build the enviroment everytime that there is a push to a branch.:
+> 7. Next we will create a webhook o that jenkins will pull and build the enviroment everytime that there is a push to a branch:
 
 * first we must go to the build trigger section of our pipeline, and select the option "GitHub hook trigger for GITScm polling"
 
