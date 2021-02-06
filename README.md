@@ -33,7 +33,7 @@
 
 <br>
 
-> 3. The next step is to access your jenkins server, using you_public_ip:8080. we theninstall the following plugins in our sever(Manage Jenkins -> Manage Plugins -> Avaialable): 
+> 3. The next step is to access your jenkins server, using **your_public_ip:8080**. we theninstall the following plugins in our sever(Manage Jenkins -> Manage Plugins -> Avaialable): 
 
 * Docker Commons Plugin
 * Docker Pipeline
