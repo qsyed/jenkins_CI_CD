@@ -15,9 +15,10 @@
 
 <br>
 
-> 2. The second thing you need is a second server in a private subnet. this will rpresent different stages such as dev, pre-production, and production
+> 2. The second thing you need is a second server in a private subnet. this will rpresent different stages such as dev, pre-production, and production. Again install the right softwares and dependencies 
 
 * ALL this can be provided as UserData when starting up your ec2 instances *
+
 * sudo yum install git -y
 * sudo yum install python3 -y
 * sudo amazon-linux-extras install docker -y 
