@@ -8,7 +8,8 @@
 * sudo yum install docker
 * sudo service docker start
 * sudo sytemctl enable dokcer
-* sudo usermod -a -G docker jenkins
+* sudo usermod -aG docker jenkins
+* sudo usermod -aG docker ec2-user
 
 <br>
 
