@@ -16,7 +16,8 @@
 
 <br>
 
-> 2. The second thing you need is a second server in a private subnet. this will rpresent different stages such as dev, pre-production, and production. Again install the right softwares and dependencies 
+> 2. The second thing you need is a second server in a private subnet. this will rpresent different stages such as dev, pre-production, and production. Again install the right softwares and dependencies:
+
 <br>
 
 **All these command can be provided as UserData when starting up your Ec2 instances**
@@ -32,7 +33,7 @@
 
 <br>
 
-> 3. The next step is to access your jenkins server, using you_public_ip:8080. we theninstall the following plugins in our sever(Manage Jenkins -> Manage Plugins): 
+> 3. The next step is to access your jenkins server, using you_public_ip:8080. we theninstall the following plugins in our sever(Manage Jenkins -> Manage Plugins -> Avaialable): 
 
 * Docker Commons Plugin
 * Docker Pipeline
@@ -40,6 +41,7 @@
 * docker-build-step
 * CloudBees Docker Build and Publish plugin
 * SSH Agent
+
 
 <br>
 
