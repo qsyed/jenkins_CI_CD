@@ -1,6 +1,8 @@
 # Setting up a Functional CI / CD pipeline 
 
-> 1. The first thing you need is a jenkins sever running in a public subnet. If you dont have that please refer to my github repo titled "jenkins-ec2". from the command line of your public server execute the following commands to get the follow softwares and set the rght permissons: * ALL this can be provided as UserData when starting up your ec2 instances *
+> 1. The first thing you need is a jenkins sever running in a public subnet. If you dont have that please refer to my github repo titled "jenkins-ec2". from the command line of your public server execute the following commands to get the follow softwares and set the rght permissons: 
+
+* ALL this can be provided as UserData when starting up your ec2 instances *
 
 * sudo yum install git -y
 * sudo yum install python3 -y
@@ -13,7 +15,17 @@
 
 <br>
 
-> 2. The second thing you need is a second server in a private subnet. this will rpresent different stages such as dev, pre-production, and production.  
+> 2. The second thing you need is a second server in a private subnet. this will rpresent different stages such as dev, pre-production, and production
+
+* ALL this can be provided as UserData when starting up your ec2 instances *
+* sudo yum install git -y
+* sudo yum install python3 -y
+* sudo amazon-linux-extras install docker -y 
+* sudo yum install docker
+* sudo service docker start
+* sudo sytemctl enable dokcer
+* sudo usermod -aG docker ec2-user
+
 <br>
 
 > 3. The next step is to access your jenkins server, using you_public_ip:8080. we theninstall the following plugins in our sever(Manage Jenkins -> Manage Plugins): 
