@@ -45,15 +45,13 @@
 
 <br>
 
-> 4. My pipeline and Test script is dependent on the boto3 SDK (software development kit) to access AWS resources. I had to enviromental variables, so that when Jenkis runs the our test script if can properly communicate with our AWS resources. The following is an example of how to set that up (go to Jenkins -> Manage Jenkins -> Configure System -> Global properties -> Environment variables)
+> 4. My Test script is dependent on the boto3 SDK (software development kit) to access AWS resources. I had to create enviromental variables, so that when Jenkis runs the test script if can properly communicate with our AWS resources. The following is an example of how to set that up (go to Jenkins -> Manage Jenkins -> Configure System -> Global properties -> Environment variables)
 
 <br>
 <img src = "imgs/env.png">
-
-
 <br>
 
-> 5. our Pipeline will build and push dokcer images to a docker hub repository. inorder to do this we must provide jenkis creditianls to be able to do this in a secure manner. We also must allow give our jenkins sever an shh connection to our private ec2. 
+> 5. The Pipeline will build and push dokcer images to a docker hub repository. inorder to do this we must provide jenkis credentials to be able to do this in a secure manner. We also must allow give our jenkins sever an shh connection to our private ec2. So that it can stop and start new containers. 
 
 <br>
 <img src = "imgs/dockerhub-privateec2.png">
@@ -64,7 +62,7 @@
 
 <br>
 
-> 6. The next step is to create our pipeline. in our pipeline definition we will put the option for "pipeline script From SCM". For the SCM field we will use the option "git". Next we will give the repository url. NExt we will specify which branch. In my case i used the dev branch. Lastly we will specify that we have a jenkinsfile for script path. 
+> 6. The next step is to create our pipeline. In our pipeline definition we will put the option for "pipeline script From SCM". For the SCM field we will use the option "git". Next we will give the repository url. NExt we will specify which branch. In my case i used the dev branch. Lastly we will specify that we have a jenkinsfile for script path. 
 
 <br>
 <img src = "imgs/pipe-line-config.png">
