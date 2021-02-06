@@ -23,6 +23,8 @@
 **All these command can be provided as UserData when starting up your Ec2 instances**
 
 
+
+
 * sudo yum install git -y
 * sudo yum install python3 -y
 * sudo amazon-linux-extras install docker -y 
