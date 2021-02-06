@@ -62,7 +62,11 @@
 
 <br>
 
-> 6. The next step is to create our pipeline. In our pipeline definition we will put the option for "pipeline script From SCM". For the SCM field we will use the option "git". Next we will give the repository url. NExt we will specify which branch. In my case i used the dev branch. Lastly we will specify that we have a jenkinsfile for script path. 
+> 6. The next step is to create our pipeline.:
+
+* **In our pipeline definition we will choose the option "pipeline script From SCM"** - since we have a Jenkinsfile that will define our stages for us. 
+
+* **For the SCM field we will use the option "git"** - You will have to give the repository url and sppecify on which branch a webhook will be listening on. In my case i used the dev branch. 
 
 <br>
 <img src = "imgs/pipe-line-config.png">
